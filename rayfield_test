@@ -2477,7 +2477,7 @@ UserInputService.InputBegan:Connect(function(input, processed)
         ImageButton.TouchTap:Connect(toggleMenu)
         ImageButton.MouseButton1Click:Connect(toggleMenu)
     else
-        if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == activationKey and not processed then
+        if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == getgenv().activationKey and not processed then
             toggleMenu()
         end
     end
